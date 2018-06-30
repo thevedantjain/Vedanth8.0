@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vedanth 8.0</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<script type="text/javascript">
+		window.onload= function() {
+  			Particles.init({
+				selector: '.background',
+				color: ['#255a92', '#34757b', '#46955d'],
+				connectParticles: true,
+				maxParticles: 180,
+
+				responsive: [
+					{
+						breakpoint: 1200,
+						options: {
+							maxParticles: 150
+						}
+					},
+					{
+						breakpoint: 480,
+						options: {
+							maxParticles: 0 //disables particles.js
+						}
+					}
+				]
+  			});
+		};
+	</script>
+	<div class="cardview">
+		<div class="intro">
+			<h1>Welcome to Vedanth 8.0</h1>
+			<hr>
+			<p><strong>Venue: Innovation Center, MIT</strong></p>
+			<p>The official technical festival of Manipal Institute of Technology, TechTatva is on the horizon and so we give to you Vedanth, a featured event of TechTatva. A technical exhibition and a platform for the students to demonstrate their unique and innovative ideas. Vedanth's vision is to bridge the gap between innovation and excellence in a more dynamic and a logical approach. The event will be conducted over two days.</p>
+			<p>For further details about Vedanth, check the <a href="#">Brochure</a></p>
+		</div>
+		<div class="themes">
+			<h3>Themes</h3>
+			<!-- <ol>
+				<li>Internet Of Things</li>
+				<li>Robotics & Automation</li>
+				<li>Clean Energy</li>
+				<li>Technologies for Social Betterment</li>
+				<li>Smart Learning</li>
+				<li>Medical Innovation</li>
+				<li>Frugal Innovation</li>
+			</ol> -->
+			<div class="containerImages">
+				<div class="imageContainer">
+					<div class="imageDiv" id="iot"></div>
+					<div class="text">Internet of Things</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="automation"></div>
+					<div class="text">Robotics & Automation</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="clean"></div>
+					<div class="text">Clean Energy</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="social"></div>
+					<div class="text">Technologies for Social Betterment</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="smart"></div>
+					<div class="text">Smart Learning</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="medical"></div>
+					<div class="text">Medical Innovation</div>
+				</div>
+				<div class="imageContainer">
+					<div class="imageDiv" id="frugal"></div>
+					<div class="text">Frugal Innovation</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p><a href="mailto:vedanth.techtatva@gmail.com">Email</a> us your abstract before 20th September</p>
+		</div>
+	</div>
+	
+	<canvas class="background"></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+</body>
+</html>
